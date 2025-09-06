@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelTours</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TravelTours</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tour-packages.html">Tour Packages</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Discover the World with Us</h1>
+      <p>Your adventure begins here</p>
+      <a href="#gallery" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-header">
+    <h2 class="gallery-title">Gallery</h2>
+    <a href="gallery.html" class="see-more-btn">See More</a>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="assets/gallery/1.jpg" alt="Pescador"></div>
+    <div class="gallery-item"><img src="assets/gallery/2.jpg" alt="Kawasan"></div>
+    <div class="gallery-item"><img src="assets/gallery/3.jpg" alt="Falls"></div>
+    <div class="gallery-item"><img src="assets/gallery/4.jpg" alt="Panagsama"></div>
+    <div class="gallery-item"><img src="assets/gallery/5.jpg" alt="Falls"></div>
+    <div class="gallery-item"><img src="assets/gallery/6.jpg" alt="Beach"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="galleryModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+</section>
+
+<!-- ===== BLOG SECTION ===== -->
+<section class="blog-section" id="blogs">
+  <div class="container">
+    <div class="blog-header">
+      <h2>Latest Articles</h2>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid">
+      <article class="blog-card">
+        <img src="assets/blog/1.jpg" alt="Blog 1">
+        <div class="blog-content">
+          <h3>Discover Hidden Beaches</h3>
+          <p>Uncover secluded beaches that offer peace, crystal waters, and stunning sunsets away from the crowds.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="assets/blog/2.jpg" alt="Blog 2">
+        <div class="blog-content">
+          <h3>Tips for Mountain Treks</h3>
+          <p>Essential advice to prepare you for your next mountain adventure, from gear to fitness and safety.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="assets/blog/3.jpg" alt="Blog 3">
+        <div class="blog-content">
+          <h3>Top Island Getaways</h3>
+          <p>Plan your next holiday on some of the world’s most beautiful islands filled with tropical experiences.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="assets/blog/4.jpg" alt="Blog 4">
+        <div class="blog-content">
+          <h3>Traveling on a Budget</h3>
+          <p>Learn how to enjoy luxury travel experiences without overspending, with smart tips and hacks.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <!-- ✅ Add more blog-cards here in the future, no extra CSS or JS needed -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Footer Column 1 -->
+    <div class="footer-col">
+      <h4>TravelTours</h4>
+      <p>Explore the world with us. We provide unforgettable journeys and adventures tailored for you.</p>
+    </div>
+
+    <!-- Footer Column 2 -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tour-packages.html">Tour Packages</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Column 3 -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@traveltours.com</li>
+        <li>Phone: +1 234 567 890</li>
+        <li>Address: 123 Explorer St, Wander City</li>
+      </ul>
+    </div>
+
+    <!-- Footer Column 4 -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 TravelTours. All Rights Reserved.</p>
+    <p1>Designed by &trade; <a href="#">Franze Kenneth Lobos | Web Developer</a></p1>
+    <p1>Powered by <a href="#">HTML, CSS, JavaScript</a></p1>
+    <p1>Icons by <a href="https://fontawesome.com">Font Awesome</a></p1>
+    <p1>Images by <a href="https://unsplash.com">Unsplash</a></p1>
+  </div>
+</footer>
+
+
+  <script src="./script/index-toggle-and-navlinks.js"></script>
+  <script src="./script/gallery-modal.js"></script>
+  <script src="./script/blog-cards-animation.js"></script>
+  <script src="./script/gallery-see-more.js"></script>
+  <script src="./script/destinationanim.js"></script>
+</body>
+</html>
